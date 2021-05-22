@@ -1,0 +1,18 @@
+import React from "react";
+import styled from "styled-components";
+
+interface Props {
+  dataType?: string;
+}
+
+export const Div = styled.div`
+  display: inline-block;
+`;
+
+export const {{pascalCase name}}: React.FC<Props> = ({ dataType }) => {
+  return <Div data-type={dataType}>{{pascalCase name}}</Div>;
+};
+
+{{pascalCase name}}.defaultProps = {
+  dataType: "{{lowerCase name}}",
+};
